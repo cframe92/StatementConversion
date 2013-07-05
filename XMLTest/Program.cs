@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.IO;
 using System.Xml.Serialization;
-
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace XMLTest
 {
@@ -14,6 +15,15 @@ namespace XMLTest
     {
         static void Main(string[] args)
         {
+            /* Write a pdf file */
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream("Statement.pdf", FileMode.Create));
+            doc.Open();
+            Paragraph par = new Paragraph("This is my first line.");
+            doc.Add(par);
+            doc.Close();
+
+
             Program p = new Program();
             p.DeserializeObject("C:\\Samples\\XML\\SampleStatementScrubbed.xml");
 
