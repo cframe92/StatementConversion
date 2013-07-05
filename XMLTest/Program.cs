@@ -49,6 +49,7 @@ namespace XMLTest
             Console.WriteLine("First Name: {0}",s.envelope[0].person.firstName);
             Console.WriteLine("Middle Name : {0}", s.envelope[0].person.middleName);
             Console.WriteLine("Last Name : {0}", s.envelope[0].person.lastName);
+            Console.WriteLine("Suffix: {0}", s.envelope[0].person.suffix);
 
             Console.WriteLine("Account Count: {0}", s.epilogue.accountCount);
             Console.WriteLine("Envelope Count : {0}", s.epilogue.envelopeCount);

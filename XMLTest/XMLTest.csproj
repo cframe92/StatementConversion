@@ -50,6 +50,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Border.cs" />
+    <Compile Include="Classes\Configuration.cs" />
+    <Compile Include="Classes\MoneyPerksStatement.cs" />
+    <Compile Include="Classes\MoneyPerksTransaction.cs" />
+    <Compile Include="Classes\SortTableItem.cs" />
+    <Compile Include="Classes\SortTableRow.cs" />
+    <Compile Include="Classes\StatementBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="statementProduction.cs" />
